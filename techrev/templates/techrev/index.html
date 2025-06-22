@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Все обзоры</h1>
+  <ul class="reviews-list">
+    {% for review in reviews %}
+      <li>
+        <a class="review-link" href="{{ review.get_absolute_url }}">{{ review.title }}</a>
+        <small class="review-date">{{ review.created|date:"j F, Y, H:i" }}</small>
+      </li>
+    {% empty %}
+      <li>Обзоры не найдены</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

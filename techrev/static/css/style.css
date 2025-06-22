@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4efef;
+  margin: 0;
+  padding: 0;
+}
+
+.review-link {
+  color: #ff5600;
+  text-decoration: none;
+}
+
+.review-link:hover {
+  color: #cd4701;
+}
+
+header {
+  background-color: #c26b38;
+  padding: 10px 20px;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  margin-top: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ebebeb;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #7f8c8d;
+  margin-top: 20px;
+}
+
+ul.reviews-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.reviews-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+ul.reviews-list li:last-child {
+  border-bottom: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"], textarea {
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #219150;
+}
