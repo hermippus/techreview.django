@@ -20,7 +20,7 @@ def lol(request):
 
 @staff_member_required(login_url='/admin/login/')
 def review_create(request):
-    form = ReviewForm(request.POST or None)
+    form = ReviewForm(request.POST or None, request.FILES or None)
     if form.is_valid():
         review = form.save()
         return redirect(review.get_absolute_url())

@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+img {
+  max-width: 400px
+}
+
 .review-link {
   color: #ff5600;
   text-decoration: none;

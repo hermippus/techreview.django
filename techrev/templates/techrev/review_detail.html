@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% load tz %}
 {% block content %}
+   {% if review.image %}
+    <img src="{{ review.image.url }}" alt="{{ review.title }}">
+   {% endif %}
   <h1>{{ review.title }}</h1>
   <h3>Дата создания: {{ review.created|date:"j F, Y, H:i" }}</h3>
     <div>{{ review.content|linebreaks }}</div>

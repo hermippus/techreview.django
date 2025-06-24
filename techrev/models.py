@@ -4,6 +4,7 @@ from django.urls import reverse
 class Review(models.Model):
     title = models.CharField(max_length=50)
     content = models.TextField(max_length=4096)
+    image = models.ImageField(upload_to="images/", blank=True   )
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
